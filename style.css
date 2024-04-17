@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Sixtyfour&display=swap');
+
+:root{
+	--black: #101415;
+	--grey: #eeeeee;
+	--white: #feffff;
+	--red: #d03233;
+	--blue: #246180;
+	--section-padding: 100px;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: var(--black);
+	color: var(--white);
+	font-family: 'Marcellus', serif;
+	padding: 0 var(--main-padding);
+}
+
+header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 3rem;
+	background-color: transparent;
+	height: 100px;
+}
+
+#logo{
+	display: flex;
+	gap: 0.15rem;
+	align-items: center;
+	color: var(--white);
+	user-select: none;
+	font-family: 'Marcellus', serif;
+}
+
+#logo .first{
+	font-size: 2rem;
+	font-family: 'SixtyFour', sans-serif;
+	background-color: var(--red);
+	border-radius: 5px;
+	padding: 0.5rem;
+}
+
+#logo .second{
+	font-family: 'SixtyFour', sans-serif;
+	font-size: 2rem;
+}
+
+#logo .trademark{
+	transform: translateY(-15px);
+}
+
+header .contact-btn{
+	border: 1px solid var(--grey);
+	background-color: var(--white);
+	color: var(--black);
+	height: min-content;
+	padding: 1rem 0.5rem;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.25rem;
+}
+
+header .contact-btn a{
+	color: initial;
+	text-decoration: none;
+}
+
+main{
+	width: 100%;
+}
+
+main .hero{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 6rem 3rem 2rem 3rem;
+	gap: 2rem;
+}
+
+main .hero .tag h1{
+	font-weight: bold;
+	font-size: 4.5rem;
+}
+
+main .hero .tag p{
+	font-size: 1.25rem;
+}
+
+main #features{
+	position: relative;
+	display: flex;
+}
+
+main #features div{
+	position: relative;
+	text-transform: uppercase;
+	width: 25%;
+	height: 400px;
+	border: 1px solid var(--white);
+	text-align: center;
+	font-size: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5rem;
+}
+
+main #why{
+	padding: 2rem 0;
+}
+
+main #why h2{
+	text-align: center;
+	padding: 2rem 0;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+main #why .reasons{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	padding: 0 2rem;
+}
+
+main #why .reasons .reason{
+	display: flex;
+}
+
+main #why .reasons .reason h3{
+	font-size: 2rem;
+}
+
+main #why .reasons .reason p{
+	font-size: 1.25rem;
+}
+
+main #why .reasons .reason .ricon{
+	font-size: 3rem;
+	width: 100px;
+	height: 100px;
+}
+
+#partners {
+	background-color: #ffffff;
+	&>*{
+		user-select: none;
+	}
+}
+
+#partners .restaurants{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	gap: 2rem;
+	margin: 2rem 0;
+	flex-wrap: wrap;
+}
+
+#partners .restaurants::-webkit-scrollbar-thumb {
+	background: var(--grey);
+}
+
+#partners .restaurants::-webkit-scrollbar {
+	width: 0.4rem;
+	height: 0.4rem;
+}
+
+#partners .restaurants::-webkit-scrollbar-track {
+	background: var(--black);
+}
+
+#partners .restaurants .logo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: min-content;
+}
+
+#contact{
+	font-size: 1.75rem;
+	padding: 2rem 0;
+	text-align: center;
+}
+
+#contact form{
+	padding: 1rem 0;
+}
+
+#contact textarea, #contact input{
+	font-size: 1.25rem;
+	width: 500px;
+	background-color: var(--black);
+	border: 1px solid var(--white);
+	border-radius: 10px;
+	color: var(--white);
+	font-family: 'Marcellus', serif;
+	margin: 0.25rem auto;
+	resize: none;
+	outline: none;
+	padding: 1rem;
+}
+
+#contact button{
+	position: relative;
+	border: 1px solid var(--grey);
+	border-radius: 10px;
+	padding: 0.5rem;
+	color: var(--black);
+	background-color: var(--white);
+	font-family: 'Marcellus', serif;
+	font-size: 1.25rem;
+	font-weight: bold;
+	margin: auto;
+	cursor: pointer;
+}
+
+#contact textarea{
+	height: 200px;
+}
+
+.contact-red{
+	color: var(--white);
+	background-color: var(--red);
+	padding: 1.5rem 0 1.5rem 100px;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+footer{
+	background-color: black;
+}
+
+@media (width < 900) {
+	main #features div{
+		display: block;
+	}
+}
